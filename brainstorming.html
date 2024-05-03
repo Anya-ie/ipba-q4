@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typhoon Odette Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            background-image: url('https://images.unsplash.com/photo-1656495782911-06e6a5f9bef5?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            overflow-y: scroll;
+            transition: background-color 0.5s ease;
+            position: relative;
+        }
+
+        header {
+            width: 100%;
+            background-color: rgba(250, 248, 239, 0.7); /* Reduced opacity */
+            padding: 30px 20px; /* Increased padding */
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background-color 0.5s ease, height 0.5s ease;
+        }
+
+        .back-home {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: darkgreen;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4em; /* Increased font size */
+            color: #145a32; /* Darker green */
+            text-align: center;
+            margin-top: 100px; /* Increased margin-top */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .image-container {
+            width: 650px;
+            height: auto;
+            margin: 20px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="new2.html" class="back-home">Back</a>
+    </header>
+    <h1>Brainstorming techniques</h1>
+	<h4 style="text-align: center;"> Now, we are introduction the 2 brainstorming techniques we used for this Quarter. We first used the 5 Whys technique, then the Mind mapping technique as seen below.</h4>
+  	<h4 style="text-align: center;"><a href="https://www.canva.com/design/DAGByLLbhXk/fWzva65MRVlpGrahyqJDHA/edit?utm_content=DAGByLLbhXk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> Access full images here!</a></span></h1>
+
+  <div class="container">
+        <div class="image-container">
+            <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.15752-9/440846151_1579065456211884_5020140473640473240_n.png?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=xE5AzzZX1IsQ7kNvgHfO1rC&_nc_ht=scontent.fmnl9-3.fna&oh=03_Q7cD1QFxzXzuhFGQGhlmG8J9xo4zw24nEJjanQbvj-ZUHqplBg&oe=665C01BC">
+        </div>
+        <div class="image-container">
+            <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/437290491_7956739804356721_1250185991129319359_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-L1LMmwCad0Q7kNvgGetF1c&_nc_ht=scontent.fmnl9-2.fna&oh=03_Q7cD1QFWmfsAct_B7XjluW23h9Pczpnk0KtrJhc6lZzbbEpcjA&oe=665C0D5D">
+        </div>
+    </div>
+</body>
+</html>

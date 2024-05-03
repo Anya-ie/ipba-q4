@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typhoon Odette Information</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            background-image: url('https://images.unsplash.com/photo-1656495782911-06e6a5f9bef5?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            overflow-y: scroll;
+            transition: background-color 0.5s ease;
+            position: relative;
+        }
+
+        header {
+            width: 100%;
+            background-color: rgba(250, 248, 239, 0.7); /* Reduced opacity */
+            padding: 30px 20px; /* Increased padding */
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background-color 0.5s ease, height 0.5s ease;
+        }
+
+        .back-home {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: darkgreen;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4em; /* Increased font size */
+            color: #145a32; /* Darker green */
+            text-align: center;
+            margin-top: 100px; /* Increased margin-top */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .info-section {
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            overflow: hidden; /* Hide overflow text */
+        }
+
+        .info-section:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 1.2em; /* Decreased font size */
+            text-align: center;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .expanded {
+            height: auto !important;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="new2.html" class="back-home">Back</a>
+    </header>
+    <h1>Typhoon Odette Information</h1>
+    <div class="container">
+        <div class="info-section" onclick="toggleText(this)">
+            <p class="short">What is the basic information of the typhoon?(click to reveal answer)</p>
+            <p class="long" style="display: none;">Typhoon Super Odette, is recognized as one of the most impactful and severe tropical cyclones. Lasting a handful of 10 days. The particular sector of the Philippines in which this typhoon greatly affected was found to be Southern Visayas , Northern Visayas, and lastly, Cebu Island. The severe typhoon wind traveled at peak speeds of 195 km/h, and a gustiness that is recorded to be 270 km/h. Additionally, as specified by PAGASA, during the course of the 10 days that the typhoon had traveled, it accumulated 272.1 millimeters of precipitation.
+</p>
+        </div>
+        <div class="info-section" onclick="toggleText(this)">
+            <p class="short">What is the basic information of the region that has been greatly affected by the typhoon?(click to reveal answer)</p>
+            <p class="long" style="display: none;">Typhoon Odette had considerably affected many regions of the country, for instance, Surigao Del Norte. Located at the Northeastern tip of Mindanao. This province's Gross Domestic Product (GDP) is estimated to be about PhP 78.38 Billion. This province has a population of 534,636 with a land area of 1,952.62 square kilometers. Additionally, the province’s population density is reportedly 274 inhabitants per square kilometer. The next province is the province of Bohol. Bohol is located in the central area of the Philippines. With a Gross Domestic Product (GDP) of PhP 171.09 billion. 
+.</p>
+        </div>
+        <div class="info-section" onclick="toggleText(this)">
+            <p class="short">How was the community affected by the typhoon?(click to reveal answer)</p>
+            <p class="long" style="display: none;"> This catastrophe caused immense damages and destruction around the community. Many people’s lives were greatly influenced and were put at stake, many had even lost their lives or had severe and minor injuries from the calamity. Additionally, there were damages to the community’s properties and infrastructure. On top of that, many houses were flattened, multiple farms were destroyed, and the typhoon caused flooding, landslides, and even power outages.</p>
+        </div>
+        <div class="info-section" onclick="toggleText(this)">
+            <p class="short">How did the community prepare for it? How did they recover?(click to reveal answer)</p>
+            <p class="long" style="display: none;">Even with a quick action of the government and civic society, there are still unmet requirements, such as sanitary facilities, food, medicine, repair kits, safe housing, and drinkable water. In the impacted areas, humanitarian assistance was led by the Philippine government. Authorities perhaps put out notices and instructions on safety precautions, and emergency response teams were probably waiting to help anybody in need. A coordinated and successful response to the typhoon would have required cooperation between local officials, relief agencies, and community people. The recovery from Typhoon Odette required an integrated plan that was assisted by government agencies, non-governmental groups, and international humanitarian organizations. This included clearing debris, repairing infrastructure, providing medical care, distributing food, and providing psychiatric support.
+</p>
+        </div>
+        <div class="info-section" onclick="toggleText(this)">
+            <p class="short">How vulnerable are they to typhoons?(click to reveal answer)</p>
+            <p class="long" style="display: none;">As it is known, the Philippines is situated in an area along the “Pacific Typhoon Belt”. This area of the planet is especially vulnerable to calamities like Typhoons and Tropical Cyclones. Seeing as this zone contains favorable atmospheric conditions which is a factor necessary for typhoon formation. Moreover, not only does our country’s geographical location contribute to the community’s vulnerability, but so does the underdevelopment of our country. The poverty of our nation provides us with poor infrastructure or housing conditions, and gives us limited access to the resources we need to be prepared in the case of calamities like typhoons.  Additionally, the concentration of population in coastal areas makes the country more vulnerable and prone to dangers linked with typhoons, namely floods and surges.
+</p>
+        </div>
+        <div class="info-section" onclick="toggleText(this)">
+            <p class="short">Were there any damages? How severe they were?(click to reveal answer)</p>
+            <p class="long" style="display: none;">The hardest hit areas included Surigao City in Northern Mindanao, Siargao Island, Dinagat Island,Maasin city in southern Visayas, and Cebu island. Around 2,108,858 houses were damaged, with 404,653 destroyed and 1,704,205 partially damaged, resulting in an estimated PHP 17.8 billion worth of crop, livestock, poultry, fisheries, and agricultural facilities damaged. It destroyed farms, houses, and other food sources as it tore through 11 of the 17 regions of the nation. Twelve million people were affected by a massive earthquake in the Caraga region, Southern Leyte, and the islands of Bohol. Landslides caused by tree damage caused significant damage in mountainous areas, affecting tourist attractions, marine resources, and leaving waste clogging roads, rivers, and shorelines. The Super Typhoon caused significant destruction, upheaval, and livelihood loss in farming and fishing communities, causing significant electrical disruptions in many regions.</p>
+        </div>
+        <div class="info-section" onclick="toggleText(this)">
+            <p class="short">Was the typhoon accompanied by secondary disasters? How did they affect the community?(click to reveal answer)</p>
+            <p class="long" style="display: none;"> Yes,  Super Typhoon Odette, also known as Rai, struck the Philippines on December 16, 2021, bringing torrential rains, violent winds, landslides, and storm surges to several regions. The typhoon affected an estimated 16 million people across the six worst hit regions. It swept through 11 of the country’s 17 regions, leaving behind a trail of flattened homes, damaged farms, and other food sources, severely affecting people’s lives and livelihoods. Areas struck included 12 million people across the islands of Bohol, Southern Leyte and Caraga region, and beyond. Relief agencies immediately responded, providing emergency assistance to save lives in the initial months, and then gradually moved into recovery. </p>
+        </div>
+        <div class="info-section" onclick="toggleText(this)">
+            <p class="short">Were there any positive impacts of the typhoon in the region? What are those?(click to reveal answer) </p>
+            <p class="long" style="display: none;">The positive effects were the water replenishing in lakes and groundwater. Typhoons can mix up nutrients to the surface. This leads to increased productivity in the marine ecosystem. The heavy rainfall provided much-needed water for plants and crops. It also plays a role in renewing dead or decaying vegetation, allowing for new growth. Typhoons help disperse seeds, promoting biodiversity and forest regeneration. Typhoons generate a large amount of rainfall leading to increased water flow in rivers and reservoirs. This provides a renewable source of electricity. Typhoons also offer valuable opportunities for scientific research so we can study the weather patterns, storm dynamics,and impact of typhoons on various systems.
+</p>
+
+    </div>
+
+    <script>
+        function toggleText(element) {
+            const shortText = element.querySelector('.short');
+            const longText = element.querySelector('.long');
+            shortText.style.display = shortText.style.display === 'none' ? 'block' : 'none';
+            longText.style.display = longText.style.display === 'none' ? 'block' : 'none';
+            element.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>
+

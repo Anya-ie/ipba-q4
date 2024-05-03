@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typhoon Odette</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            background-image: url('https://images.unsplash.com/photo-1656495782911-06e6a5f9bef5?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            overflow-y: scroll;
+            transition: background-color 0.5s ease;
+            position: relative;
+        }
+
+        header {
+            width: 100%;
+            background-color: rgba(250, 248, 239, 0.7); /* Adjusted opacity */
+            padding: 15px 20px;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background-color 0.5s ease, height 0.5s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header:hover .menu-bar {
+            transform: translateX(0);
+        }
+
+        .menu-bar {
+            width: 200px;
+            height: 100vh;
+            background-color: #faf8ef;
+            position: fixed;
+            top: 0;
+            right: -200px;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-bar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-bar ul li {
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+            color: darkgreen;
+        }
+
+        .menu-bar ul li:hover {
+            background-color: #f0f0f0;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: darkgreen;
+        }
+
+        h1 {
+            font-size: 5em;
+            margin: 0;
+            text-align: center;
+            margin-top: 80px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in;
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            margin: 0 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .box p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1em;
+            transition: transform 0.3s ease;
+            opacity: 0;
+        }
+
+        .box:hover p {
+            opacity: 1;
+        }
+
+        .button {
+            width: 250px;
+            height: 60px;
+            background-color: rgba(250, 248, 239, 0.7); /* Adjusted opacity */
+            color: darkgreen;
+            text-align: center;
+            line-height: 60px;
+            font-size: 1.5em;
+            border-radius: 15px;
+            margin: 50px auto;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #eae6df;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="presented-by">Presented by Group 9</h2>
+        <div class="menu-bar">
+            <ul>
+                <li>Menu Item 1</li>
+                <li>Menu Item 2</li>
+                <li>Menu Item 3</li>
+                <li>Menu Item 4</li>
+            </ul>
+        </div>
+    </header>
+    <h1>Typhoon Odette</h1>
+    <p>Greetings! This is Group 9 of A07-SERVICE-8-2 kindly welcoming you to our website that tackles everything you need to know about Typhoon Odette. Our purpose is to bring enlightenment about the topic that we have thoroughly researched about. Along with that, we compiled some information in order to keep yourself safe from a typhoon, in case it ever happens again.</p>
+    <p>Presenting our team:</p>
+    <div class="container">
+        <a href="image1.jpg" class="box" onclick="copyText('Image 1')">
+            <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.15752-9/438209151_402209095952421_863058988225352308_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=_UE9g5-CTAUQ7kNvgFoOLcJ&_nc_ht=scontent.fmnl9-3.fna&oh=03_Q7cD1QGMmNOqOnjPhe2K55pWyCe6LfvUmkGuVPkMVdPKwkoD8g&oe=665977BE" alt="Image 1">
+            <p>Text for Image 1</p>
+        </a>
+        <a href="image2.jpg" class="box" onclick="copyText('Image 2')">
+            <img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/438238322_749583557378168_9016963562569786530_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3syENW9pXjYQ7kNvgH65IrU&_nc_ht=scontent.fmnl9-1.fna&oh=03_Q7cD1QEm3IIe45u93tJJRZR80pSpchUQtTdqhmFleEYWeTJMXw&oe=66598CC7" alt="Image 2">
+            <p>Text for Image 2</p>
+        </a>
+        <a href="image3.jpg" class="box" onclick="copyText('Image 3')">
+            <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/438246270_872484301585304_4771934489618441329_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=xj3C3UajhL4Q7kNvgEfPFsO&_nc_ht=scontent.fmnl9-2.fna&oh=03_Q7cD1QGsviJpE-q0ve_GxUPpnrvooJAeJaBGN29VB0sKkcDtkA&oe=665970B6" alt="Image 3">
+            <p>Text for Image 3</p>
+        </a>
+        <a href="image4.jpg" class="box" onclick="copyText('Image 4')">
+            <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/438237623_1086537089110900_3728973478108691863_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8RbSWrkoaYsQ7kNvgEb4asv&_nc_ht=scontent.fmnl9-2.fna&oh=03_Q7cD1QFDq9JcTQLG7B6FLpAryZ0qSzlG0qoMzWiJduT9fM2NMQ&oe=66596991" alt="Image 4">
+            <p>Text for Image 4</p>
+        </a>
+    </div>
+    <div class="button" onclick="window.location.href='new2.html'">Start Learning</div>
+
+    <script>
+        function copyText(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('Text copied to clipboard: ' + text);
+        }
+    </script>
+</body>
+</html>
+
+

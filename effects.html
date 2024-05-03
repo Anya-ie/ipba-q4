@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typhoon Mitigation Tips</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            background-image: url('https://images.unsplash.com/photo-1656495782911-06e6a5f9bef5?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            overflow-y: scroll;
+            transition: background-color 0.5s ease;
+            position: relative;
+        }
+
+        header {
+            width: 100%;
+            background-color: rgba(250, 248, 239, 0.7); /* Reduced opacity */
+            padding: 30px 20px; /* Increased padding */
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background-color 0.5s ease, height 0.5s ease;
+        }
+
+        .back-home {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: darkgreen;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4em; /* Increased font size */
+            color: #145a32; /* Darker green */
+            text-align: center;
+            margin-top: 100px; /* Increased margin-top */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .info-section {
+            width: 70%;
+            max-width: 600px;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .info-section:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="new2.html" class="back-home">Back</a>
+    </header>
+    <h1>Typhoon Mitigation Tips</h1>
+    <h2>Here are some ways to mitigate the effects of a typhoon:</h2>
+    <div class="container">
+        <div class="info-section">
+            <h2>1. Secure Your Property</h2>
+            <p>Ensure that loose objects in your yard are secured or brought indoors. Trim trees and branches that could potentially fall on your property during strong winds.</p>
+        </div>
+        <div class="info-section">
+            <h2>2. Reinforce Doors and Windows</h2>
+            <p>Install storm shutters or board up windows to protect them from flying debris. Reinforce garage doors to prevent them from buckling under pressure.</p>
+        </div>
+        <div class="info-section">
+            <h2>3. Stock Up on Supplies</h2>
+            <p>Have an emergency kit ready with essential supplies such as food, water, flashlights, batteries, first aid supplies, and medications. Ensure you have enough supplies to last several days.</p>
+        </div>
+        <div class="info-section">
+            <h2>4. Create a Family Emergency Plan</h2>
+            <p>Develop a family emergency plan that includes evacuation routes, meeting points, and communication methods. Practice the plan with your family members so everyone knows what to do in an emergency.</p>
+        </div>
+        <div class="info-section">
+            <h2>5. Stay Informed</h2>
+            <p>Monitor weather updates from reliable sources and heed warnings and evacuation orders issued by local authorities. Stay indoors during the storm and only venture out when it is safe to do so.</p>
+        </div>
+    </div>
+</body>
+</html>
